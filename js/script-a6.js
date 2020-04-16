@@ -8,6 +8,8 @@ function handleButton(data) {
 	if (sum_progress >= 101) {
 		alert("Значение больше 100% и будет обнулено");
 		sum_progress = 0;
+		progressBar = String(sum_progress) + "%";
+		$("#progressbar").width(progressBar);
 	}
 	else {
 		progressBar = String(sum_progress) + "%";
